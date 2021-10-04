@@ -1,0 +1,211 @@
+[debug] [2021-05-17T19:06:45.902Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:06:45.906Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-17T19:06:45.907Z] CLI Version:   9.1.2
+[debug] [2021-05-17T19:06:45.908Z] Platform:      win32
+[debug] [2021-05-17T19:06:45.908Z] Node Version:  v12.16.3
+[debug] [2021-05-17T19:06:45.910Z] Time:          Tue May 18 2021 05:06:45 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-05-17T19:06:45.910Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:06:45.910Z] 
+[debug] [2021-05-17T19:06:45.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T19:06:45.928Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\project alpha\project JS\react_ws\beta-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-05-17T19:07:39.349Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-17T19:07:39.350Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T19:07:40.051Z] <<< HTTP RESPONSE 200 {"date":"Mon, 17 May 2021 19:07:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:07:40.101Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"monster-finder","name":"monster-finder-app"}
+[debug] [2021-05-17T19:07:41.912Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 17 May 2021 19:07:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1288","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:07:41.912Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-05-17T19:07:42.303Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID monster-finder. Please try again with a unique project ID.
+[debug] [2021-05-17T19:07:58.596Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:07:58.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-17T19:07:58.601Z] CLI Version:   9.1.2
+[debug] [2021-05-17T19:07:58.602Z] Platform:      win32
+[debug] [2021-05-17T19:07:58.602Z] Node Version:  v12.16.3
+[debug] [2021-05-17T19:07:58.604Z] Time:          Tue May 18 2021 05:07:58 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-05-17T19:07:58.604Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:07:58.605Z] 
+[debug] [2021-05-17T19:07:58.679Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T19:07:58.681Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\project alpha\project JS\react_ws\beta-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-05-17T19:08:43.426Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"monster_finder_app_03","name":"monster-finder-app"}
+[debug] [2021-05-17T19:08:45.281Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 17 May 2021 19:08:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1159","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:08:45.281Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2021-05-17T19:08:45.609Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:416:28)
+    at IncomingMessage.emit (events.js:322:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2021-05-17T19:09:52.134Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:09:52.138Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-17T19:09:52.139Z] CLI Version:   9.1.2
+[debug] [2021-05-17T19:09:52.139Z] Platform:      win32
+[debug] [2021-05-17T19:09:52.139Z] Node Version:  v12.16.3
+[debug] [2021-05-17T19:09:52.141Z] Time:          Tue May 18 2021 05:09:52 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-05-17T19:09:52.141Z] ----------------------------------------------------------------------
+[debug] [2021-05-17T19:09:52.141Z] 
+[debug] [2021-05-17T19:09:52.157Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-17T19:09:52.158Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\project alpha\project JS\react_ws\beta-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-05-17T19:10:14.314Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"monster-finder-03","name":"monster-finder"}
+[debug] [2021-05-17T19:10:16.353Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 19:10:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1387","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:10:16.358Z] > refreshing access token with scopes: []
+[debug] [2021-05-17T19:10:16.358Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T19:10:17.311Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 17 May 2021 19:10:30 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:10:17.377Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 [none]
+[debug] [2021-05-17T19:10:18.969Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 200
+[debug] [2021-05-17T19:10:18.970Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 {"name":"operations/cp.9136231557157318060","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2021-05-17T19:10:19.474Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-05-17T19:10:19.474Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 [none]
+[debug] [2021-05-17T19:10:21.134Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 200
+[debug] [2021-05-17T19:10:21.135Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9136231557157318060 {"name":"operations/cp.9136231557157318060","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"636164180093","projectId":"monster-finder-03","lifecycleState":"ACTIVE","name":"monster-finder","createTime":"2021-05-17T19:10:29.439Z"}}
+[debug] [2021-05-17T19:10:21.139Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-17T19:10:21.139Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T19:10:21.520Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 17 May 2021 19:10:35 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:10:21.578Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/monster-finder-03:addFirebase  
+ 
+[debug] [2021-05-17T19:10:26.252Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 17 May 2021 19:10:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:10:26.253Z] > refreshing access token with scopes: []
+[debug] [2021-05-17T19:10:26.254Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-17T19:10:26.629Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 17 May 2021 19:10:40 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-17T19:10:26.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl [none]
+[debug] [2021-05-17T19:10:28.264Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl 200
+[debug] [2021-05-17T19:10:28.264Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl {"name":"operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl"}
+[debug] [2021-05-17T19:10:28.766Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-05-17T19:10:28.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl [none]
+[debug] [2021-05-17T19:10:30.360Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl 200
+[debug] [2021-05-17T19:10:30.360Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl {"name":"operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl"}
+[debug] [2021-05-17T19:10:31.360Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-05-17T19:10:31.361Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl [none]
+[debug] [2021-05-17T19:10:33.051Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl 200
+[debug] [2021-05-17T19:10:33.051Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl {"name":"operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl"}
+[debug] [2021-05-17T19:10:35.052Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-05-17T19:10:35.053Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl [none]
+[debug] [2021-05-17T19:10:36.525Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl 200
+[debug] [2021-05-17T19:10:36.525Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl {"name":"operations/workflows/ZDY0MjI2OTYtZmU0MS00MWZhLWFhYzAtMzYwMjNjM2E0MDBl","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"monster-finder-03","projectNumber":"636164180093","displayName":"monster-finder","name":"projects/monster-finder-03","resources":{"hostingSite":"monster-finder-03"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: monster-finder-03
+[info]    - Project Name: monster-finder
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/monster-finder-03/overview
+[info] i  Using project monster-finder-03 (monster-finder) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-05-17T19:11:21.014Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-05-17T19:11:21.516Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-05-17T19:11:21.516Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.6.1","browserURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.tgz"},"live":{"version":"8.6","browserURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.6.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.6.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.6.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Admin\Desktop 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=237895916&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-05-17T19:11:35.436Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"da05ae31513a5aabdb70","redirect_uri":"http://localhost:9005","state":"237895916"}
+[debug] [2021-05-17T19:11:35.974Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 17 May 2021 19:11:49 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"a70e0aff330eca5edaf81ba048c864f5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"D822:74FA:F1419:104568:60A2BFF5"}
+[debug] [2021-05-17T19:11:35.976Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-05-17T19:11:36.523Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-05-17T19:11:36.523Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"RoadRomeo1","id":43252344,"node_id":"MDQ6VXNlcjQzMjUyMzQ0","avatar_url":"https://avatars.githubusercontent.com/u/43252344?v=4","gravatar_id":"","url":"https://api.github.com/users/RoadRomeo1","html_url":"https://github.com/RoadRomeo1","followers_url":"https://api.github.com/users/RoadRomeo1/followers","following_url":"https://api.github.com/users/RoadRomeo1/following{/other_user}","gists_url":"https://api.github.com/users/RoadRomeo1/gists{/gist_id}","starred_url":"https://api.github.com/users/RoadRomeo1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/RoadRomeo1/subscriptions","organizations_url":"https://api.github.com/users/RoadRomeo1/orgs","repos_url":"https://api.github.com/users/RoadRomeo1/repos","events_url":"https://api.github.com/users/RoadRomeo1/events{/privacy}","received_events_url":"https://api.github.com/users/RoadRomeo1/received_events","type":"User","site_admin":false,"name":"Himanshu vyas","company":"Wipro","blog":"","location":"ujjain, India","email":null,"hireable":true,"bio":"Upgrading....V2.1","twitter_username":null,"public_repos":13,"public_gists":0,"followers":0,"following":1,"created_at":"2018-09-13T20:14:46Z","updated_at":"2021-05-17T19:01:50Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":13527,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as RoadRomeo1 
+[info] 
