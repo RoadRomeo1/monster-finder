@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Monster Finder
 
 This is a mockup of search app in react.
